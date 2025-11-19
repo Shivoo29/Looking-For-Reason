@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JobHack Auto Apply</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 400px;
+      font-family: Arial, sans-serif;
+      background: white;
+      color: black;
+    }
+
+    .header {
+      background: #FFFF00;
+      border-bottom: 4px solid black;
+      padding: 16px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .content {
+      padding: 16px;
+    }
+
+    .status {
+      margin-bottom: 16px;
+      padding: 12px;
+      border: 4px solid black;
+      background: #f0f0f0;
+    }
+
+    .status.active {
+      background: #00FF00;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background: #FFFF00;
+      border: 4px solid black;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-bottom: 8px;
+      box-shadow: 4px 4px 0 black;
+      transition: all 0.1s;
+    }
+
+    .btn:hover {
+      transform: translate(1px, 1px);
+      box-shadow: 3px 3px 0 black;
+    }
+
+    .btn:active {
+      transform: translate(4px, 4px);
+      box-shadow: none;
+    }
+
+    .btn.secondary {
+      background: white;
+    }
+
+    .info {
+      font-family: monospace;
+      font-size: 12px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 2px solid black;
+    }
+
+    .info-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .error {
+      background: #FF0000;
+      color: white;
+      padding: 12px;
+      border: 4px solid black;
+      margin-bottom: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>JOBHACK</h1>
+  </div>
+
+  <div class="content">
+    <div id="status" class="status">
+      <strong>STATUS:</strong> <span id="status-text">Checking...</span>
+    </div>
+
+    <div id="error" class="error" style="display: none;">
+      <span id="error-text"></span>
+    </div>
+
+    <button id="extract-jd" class="btn">EXTRACT JOB INFO</button>
+    <button id="auto-fill" class="btn">AUTO-FILL FORM</button>
+    <button id="quick-apply" class="btn">QUICK APPLY</button>
+    <button id="settings" class="btn secondary">SETTINGS</button>
+
+    <div class="info">
+      <div class="info-item">
+        <span>RESUME:</span>
+        <span id="resume-name">Not selected</span>
+      </div>
+      <div class="info-item">
+        <span>APPLICATIONS:</span>
+        <span id="app-count">0</span>
+      </div>
+      <div class="info-item">
+        <span>ATS SCORE:</span>
+        <span id="ats-score">--</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
