@@ -1,0 +1,15 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="128" height="128" fill="#FFFF00"/>
+
+  <!-- Border -->
+  <rect x="4" y="4" width="120" height="120" stroke="#000000" stroke-width="8" fill="none"/>
+
+  <!-- Letter J -->
+  <path d="M 35 35 L 35 75 Q 35 85 45 85 L 55 85" stroke="#000000" stroke-width="12" stroke-linecap="square" fill="none"/>
+
+  <!-- Letter H -->
+  <path d="M 70 35 L 70 85" stroke="#000000" stroke-width="12" stroke-linecap="square"/>
+  <path d="M 90 35 L 90 85" stroke="#000000" stroke-width="12" stroke-linecap="square"/>
+  <path d="M 70 60 L 90 60" stroke="#000000" stroke-width="12" stroke-linecap="square"/>
+</svg>
