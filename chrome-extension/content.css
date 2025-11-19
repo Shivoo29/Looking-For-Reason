@@ -1,0 +1,23 @@
+/* Styles for injected elements */
+
+#jobhack-indicator {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Highlight filled fields */
+input.jobhack-filled,
+textarea.jobhack-filled {
+  border: 3px solid #00FF00 !important;
+  background-color: #00FF0010 !important;
+}

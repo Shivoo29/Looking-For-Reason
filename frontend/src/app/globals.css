@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 60 100% 50%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 0%;
+    --radius: 0rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 60 100% 50%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 300 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 100%;
+    --input: 0 0% 100%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Neo-Brutalist Custom Styles */
+.brutal-border {
+  @apply border-4 border-black;
+}
+
+.brutal-shadow {
+  @apply shadow-brutal;
+}
+
+.brutal-button {
+  @apply brutal-border brutal-shadow bg-brutal-yellow text-black font-bold uppercase px-6 py-3 transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-brutal-sm active:translate-x-2 active:translate-y-2 active:shadow-none;
+}
+
+.brutal-input {
+  @apply brutal-border bg-white px-4 py-3 font-mono text-lg focus:outline-none focus:ring-4 focus:ring-black focus:ring-offset-4;
+}
+
+.brutal-card {
+  @apply brutal-border brutal-shadow bg-white p-6;
+}
+
+.brutal-heading {
+  @apply font-brutal text-4xl md:text-6xl uppercase leading-none tracking-tight;
+}
+
+.brutal-text {
+  @apply font-mono text-base md:text-lg leading-relaxed;
+}
+
+/* Status Colors */
+.status-pending {
+  @apply bg-yellow-300 text-black;
+}
+
+.status-applied {
+  @apply bg-blue-500 text-white;
+}
+
+.status-interview {
+  @apply bg-purple-500 text-white;
+}
+
+.status-rejected {
+  @apply bg-red-500 text-white;
+}
+
+.status-accepted {
+  @apply bg-green-500 text-white;
+}
+
+/* Score Indicators */
+.score-low {
+  @apply text-red-600 font-bold;
+}
+
+.score-medium {
+  @apply text-yellow-600 font-bold;
+}
+
+.score-high {
+  @apply text-green-600 font-bold;
+}
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.3s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 0.3s ease-out;
+}
+
+/* Grid Patterns */
+.grid-pattern {
+  background-image:
+    linear-gradient(to right, #00000010 1px, transparent 1px),
+    linear-gradient(to bottom, #00000010 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Utility Classes */
+.text-shadow-brutal {
+  text-shadow: 4px 4px 0px #000000;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
