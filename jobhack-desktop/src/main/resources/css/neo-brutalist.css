@@ -1,0 +1,335 @@
+/* Neo-Brutalist Theme for JobHack Desktop */
+
+.root {
+    -fx-background-color: #000000;
+    -fx-font-family: "Courier New", "Consolas", "Monaco", monospace;
+    -fx-font-size: 13px;
+}
+
+/* Headers */
+.header {
+    -fx-text-fill: #00FF00;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-border-color: #00FF00;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+    -fx-background-color: #000000;
+}
+
+.sub-header {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+}
+
+/* Panels */
+.panel {
+    -fx-background-color: #0A0A0A;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}
+
+.activity-feed {
+    -fx-background-color: #0A0A0A;
+    -fx-border-color: #00FF00;
+    -fx-border-width: 2px;
+}
+
+.analytics-panel {
+    -fx-background-color: #0A0A0A;
+    -fx-border-color: #00FFFF;
+    -fx-border-width: 2px;
+}
+
+.reasoning-panel {
+    -fx-background-color: #0A0A0A;
+    -fx-border-color: #FFFF00;
+    -fx-border-width: 2px;
+}
+
+/* List Views */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1px;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12px;
+    -fx-padding: 5px;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #00FF00;
+    -fx-text-fill: #000000;
+}
+
+.list-cell:filled:hover {
+    -fx-background-color: #1A1A1A;
+}
+
+/* Tables */
+.table-view {
+    -fx-background-color: #0A0A0A;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+}
+
+.table-row-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #00FF00;
+    -fx-text-fill: #000000;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #1A1A1A;
+}
+
+.table-cell {
+    -fx-text-fill: #FFFFFF;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-column-header {
+    -fx-background-color: #000000;
+    -fx-text-fill: #00FF00;
+    -fx-border-color: #00FF00;
+    -fx-border-width: 0 0 2px 0;
+    -fx-font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+    -fx-padding: 10px 20px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #00FF00;
+    -fx-border-color: #00FF00;
+}
+
+.button:pressed {
+    -fx-background-color: #00CC00;
+    -fx-border-color: #00CC00;
+}
+
+.button-primary {
+    -fx-background-color: #00FF00;
+    -fx-text-fill: #000000;
+    -fx-border-color: #00FF00;
+    -fx-border-width: 2px;
+}
+
+.button-danger {
+    -fx-background-color: #FF0000;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FF0000;
+    -fx-border-width: 2px;
+}
+
+/* Text Fields */
+.text-field {
+    -fx-background-color: #1A1A1A;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+    -fx-padding: 8px;
+    -fx-prompt-text-fill: #666666;
+}
+
+.text-field:focused {
+    -fx-border-color: #00FF00;
+}
+
+/* Text Areas */
+.text-area {
+    -fx-background-color: #1A1A1A;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+}
+
+.text-area:focused {
+    -fx-border-color: #00FF00;
+}
+
+.text-area .content {
+    -fx-background-color: #1A1A1A;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: #1A1A1A;
+}
+
+.text-area .scroll-pane .viewport {
+    -fx-background-color: #1A1A1A;
+}
+
+/* Reasoning Log */
+.reasoning-log {
+    -fx-background-color: #0A0A0A;
+    -fx-text-fill: #FFFF00;
+    -fx-border-color: #FFFF00;
+    -fx-border-width: 2px;
+    -fx-font-family: "Courier New";
+    -fx-font-size: 11px;
+}
+
+/* Labels */
+.label {
+    -fx-text-fill: #FFFFFF;
+}
+
+.label-success {
+    -fx-text-fill: #00FF00;
+    -fx-font-weight: bold;
+}
+
+.label-warning {
+    -fx-text-fill: #FFFF00;
+    -fx-font-weight: bold;
+}
+
+.label-error {
+    -fx-text-fill: #FF0000;
+    -fx-font-weight: bold;
+}
+
+.label-info {
+    -fx-text-fill: #00FFFF;
+}
+
+/* Progress Bar */
+.progress-bar {
+    -fx-background-color: #1A1A1A;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #00FF00;
+}
+
+/* Scroll Bar */
+.scroll-bar {
+    -fx-background-color: #1A1A1A;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #00FF00;
+}
+
+.scroll-bar .increment-button,
+.scroll-bar .decrement-button {
+    -fx-background-color: #1A1A1A;
+}
+
+/* Separator */
+.separator .line {
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 1px 0 0 0;
+}
+
+/* Menu */
+.menu-bar {
+    -fx-background-color: #000000;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.menu-item {
+    -fx-background-color: #000000;
+    -fx-text-fill: #FFFFFF;
+}
+
+.menu-item:hover {
+    -fx-background-color: #00FF00;
+    -fx-text-fill: #000000;
+}
+
+/* Stat Cards */
+.stat-card {
+    -fx-background-color: #0A0A0A;
+    -fx-border-color: #00FF00;
+    -fx-border-width: 2px;
+    -fx-padding: 15px;
+}
+
+.stat-value {
+    -fx-text-fill: #00FF00;
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+}
+
+.stat-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 12px;
+}
+
+/* Status Badges */
+.badge {
+    -fx-padding: 5px 10px;
+    -fx-border-width: 2px;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+}
+
+.badge-pending {
+    -fx-background-color: #FFFF00;
+    -fx-text-fill: #000000;
+    -fx-border-color: #FFFF00;
+}
+
+.badge-completed {
+    -fx-background-color: #00FF00;
+    -fx-text-fill: #000000;
+    -fx-border-color: #00FF00;
+}
+
+.badge-rejected {
+    -fx-background-color: #FF0000;
+    -fx-text-fill: #FFFFFF;
+    -fx-border-color: #FF0000;
+}
+
+.badge-interview {
+    -fx-background-color: #00FFFF;
+    -fx-text-fill: #000000;
+    -fx-border-color: #00FFFF;
+}
+
+/* ATS Score */
+.ats-score-excellent {
+    -fx-text-fill: #00FF00;
+    -fx-font-weight: bold;
+}
+
+.ats-score-good {
+    -fx-text-fill: #FFFF00;
+    -fx-font-weight: bold;
+}
+
+.ats-score-fair {
+    -fx-text-fill: #FFA500;
+    -fx-font-weight: bold;
+}
+
+.ats-score-poor {
+    -fx-text-fill: #FF0000;
+    -fx-font-weight: bold;
+}
